@@ -1,0 +1,129 @@
+/* optional container  */
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* accordion header  */
+
+.accordion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 25px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+
+/* accordion icons */
+
+span.icon:before {
+    content: "";
+    width: 3px;
+    height: 15px;
+    position: absolute;
+    background-color: #000;
+    transition: .35s ease-out;
+}
+
+span.icon:after {
+    content: "";
+    width: 15px;
+    height: 3px;
+    position: absolute;
+    background-color: #000;
+    top: 46%;
+    right: 20px;
+    opacity: 1;
+    transition: .35s ease-out;
+}
+
+.accordion.active span.icon:after {
+    transform: rotate(90deg);
+    transition: .35s ease-in-out;
+    opacity: 0;
+}
+
+.accordion.active span.icon:before {
+    transform: rotate(90deg);
+    transition: .35s ease-in-out;
+}
+
+
+/* panel */
+
+.panel {
+    flex: 0 1 auto;
+    width: 100%;
+    max-width: 1200px;
+    height: 0;
+    padding: 0 18px;
+    background-color: white;
+    overflow: hidden;
+    transition: height .2s ease-in-out;
+}
+
+.panel.active {
+    transition: height .35s ease-in-out;
+}
+
+
+/* open all button  */
+
+.open-all-btn button {
+    position: relative;
+    border-radius: 0;
+    background-color: #eee;
+    border: solid 1px #eee;
+    /*margin: 20px;*/
+    padding: 20px;
+}
+
+
+/* panel and open all button icons */
+
+.open-all-btn button span.icon {
+    margin-left: 25px;
+}
+
+.open-all-btn button span.icon:before {
+    content: "";
+    width: 3px;
+    height: 15px;
+    position: absolute;
+    background-color: #000;
+    transition: .35s ease-out;
+}
+
+.open-all-btn button span.icon:after {
+    content: "";
+    width: 15px;
+    height: 3px;
+    position: absolute;
+    background-color: #000;
+    top: 26px;
+    right: 14px;
+}
+
+.acc-active .open-all-btn button span.icon:after {
+    transform: rotate(90deg);
+    transition: .35s ease-in-out;
+    opacity: 0;
+}
+
+.acc-active .open-all-btn button span.icon:before {
+    transform: rotate(90deg);
+    transition: .35s ease-in-out;
+}

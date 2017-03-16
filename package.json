@@ -1,0 +1,24 @@
+{
+  "name": "accordion",
+  "version": "1.0.0",
+  "description": "accordion - javascript plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.designory.com/Merck_Components/Accordion.git"
+  },
+  "keywords": [
+    "accordion",
+    "plugin",
+    "javascript"
+  ],
+  "author": "Will Ramirez <william.ramirez@designory.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
